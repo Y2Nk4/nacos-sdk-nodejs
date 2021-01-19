@@ -42,7 +42,7 @@ const client = new NacosNamingClient({
   logger,
   serverList: '127.0.0.1:8848', // replace to real nacos serverList
   namespace: 'public',
-  account: '<account>',
+  username: '<account>',
   password: '<password>'
 });
 await client.ready();
@@ -90,7 +90,7 @@ const configClient = new NacosConfigClient({
 const configClient = new NacosConfigClient({
   serverAddr: '127.0.0.1:8848',
   namespace: '<namespace>',
-  account: '<account>',
+  username: '<account>',
   password: '<password>'
 });
 
